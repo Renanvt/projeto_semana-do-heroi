@@ -33,7 +33,7 @@ export function Home() {
             <Header />
             <Container>
                 <Title title="O que você quer ler hoje?" />
-                <div className="gap-8 grid grid-cols-8 my-6">
+                <div className="gap-8 grid md:grid-cols-8 my-6 grid-cols-4">
                     {genderBooks.map((book) => (
                         <Button title={book} variant={selectedGender.includes(book) ? 'dark' : 'light'}
                             onClick={() => handleSelect(book)} />
@@ -43,7 +43,7 @@ export function Home() {
                     <p className='text-evergreen font-semibold text-2xl'>Sobre o que você gostaria de receber uma recomendação de livro?</p>
                     <input type="text" placeholder="Eu gostaria de ler..." className="outline-none shadow-lg border border-gray-100 rounded-lg w-full p-3 mt-3" />
                 </div>
-                <Title title="Livros recomendados" />
+                <Title title="Livros recomendados" className="my-5"/>
                 <Card/>
             </Container>
         </div>

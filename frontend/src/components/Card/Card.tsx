@@ -7,10 +7,12 @@ export function Card() {
             <img src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg" alt="" className="col-span-1 w-full h-full rounded-l-lg" />
             <div className='col-span-2'>
                 <p className='font-bold text-2xl text-evergreen'>Código limpo</p>
-                <p className='font-light text-lg text-gray-500'>Autor</p>
-                <Tag title="Ação" />
-                <p>Sinopse: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper erat faucibus justo luctus gravida. In hac habitasse platea dictumst. Curabitur at massa vel nulla pulvinar dignissim.</p>
-                <Button title="Ver mais" variant="light" />
+                <p className='font-light text-lg text-gray-500 mb-2'>Autor</p>
+                <Tag title="Ação" className='mb-3' />
+                <p>
+                    <strong>Sinopse:</strong>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper erat faucibus justo luctus gravida. In hac habitasse platea dictumst. Curabitur at massa vel nulla pulvinar dignissim.</p>
+                <Button title="Ver mais" variant="light" className='w-1/2' />
 
             </div>
         </div>
