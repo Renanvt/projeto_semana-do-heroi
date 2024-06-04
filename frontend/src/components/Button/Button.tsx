@@ -4,6 +4,7 @@ type Props = {
     title: string;
     className?: string;
     variant?: 'light' | 'dark';
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onClick?: (title: any) => void;
 };
 
