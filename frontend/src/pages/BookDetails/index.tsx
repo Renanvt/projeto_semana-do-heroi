@@ -1,7 +1,11 @@
+import { useParams } from "react-router-dom";
+import { Card } from "../../components/Card/Card";
 import { Container } from "../../components/Container/Container";
 import { HeaderTitle } from "../../components/Header/HeaderTitle";
+import { Title } from "../../components/Title/Title";
 
 export function BookDetails() {
+    const {id} = useParams()
     return (
         <Container>
             <HeaderTitle />
@@ -15,6 +19,15 @@ export function BookDetails() {
                 </div>
                 <div>
                     <img src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg" alt="" className="w-full rounded-lg" />
+                </div>
+            </div>
+            <div>
+                <Title title='Recomendações com base nesse livro' className='my-6' />
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-5'>
+                    <Card id="123"/>
+                    <Card id="123"/>
+                    <Card id="123"/>
+                    <Card id="123"/>
                 </div>
             </div>
         </Container>
