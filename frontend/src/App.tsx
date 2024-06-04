@@ -1,7 +1,11 @@
+import { Container } from "./components/Container/Container"
+import { HeaderTitle } from "./components/Header/HeaderTitle"
+import { Header } from "./components/Header/Header"
+
 function App() {
   return (
     <>
-     <h1 className='font-bold text-3xl'>Helo World</h1>
+     <Header/>
     </>
   )
 }
