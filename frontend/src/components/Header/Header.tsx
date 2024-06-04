@@ -1,4 +1,5 @@
 import backgroundImage from '../../assets/img/background-header.png'
+import { Button } from '../Button/Button'
 import { Container } from '../Container/Container'
 import { HeaderTitle } from './HeaderTitle'
 
@@ -14,9 +15,7 @@ export function Header() {
                 <div className='mt-28'>
                     <p className='text-7xl font-bold text-evergreen'>Encontre livros que <br/>seja a sua cara!</p>
                     <p className='text-gray-500 my-5 text-xl'>lorem ipsum</p>
-                    <button className='bg-evergreen-light px-6 py-3 rounded-lg shadow text-white font-medium mt-3'>
-                        Pesquisar Livros
-                    </button>
+                    <Button title={'Pesquisar livros'} />
                 </div>
             </Container>
         </header>
